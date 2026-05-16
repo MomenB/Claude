@@ -14,6 +14,9 @@ namespace TrainingClaude.Controllers
         [HttpGet("hello", Name = "Hello")]
         public string Hello() => "Hello, World111!";
 
+        [HttpGet("hello2", Name = "Hello2")]
+        public string Hello2() => "Hello 2, World!";
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
