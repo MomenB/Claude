@@ -11,7 +11,8 @@ namespace TrainingClaude.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         ];
 
-        [HttpGet("hello", Name = "Hello")]
+        [HttpGet("hello", Name = "Hello")]\
+
         public string Hello() => "Hello, World111!";
 
         [HttpGet("hello2", Name = "Hello2")]
@@ -19,6 +20,9 @@ namespace TrainingClaude.Controllers
 
         [HttpGet("quickstart", Name = "Quickstart")]
         public string Quickstart() => "Quickstart!";
+
+        [HttpGet("hello5", Name = "Hello5")]
+        public string Hello5() => "Hello, World 5!";
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
